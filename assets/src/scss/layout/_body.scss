@@ -1,0 +1,457 @@
+/*
+ * Default
+ * 
+ */
+
+.body-container {
+	@include make-container;
+	max-width: $body-max-width;
+
+	@include media("<sm") {
+		padding: 0;
+	} 
+}
+
+// counter section
+
+.s-counter {
+	background: #95e1d3;
+
+}
+
+
+// service section
+
+.servie-title {
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: rgba(70, 74, 76, 0.8);
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.service-details {
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	color: #b3b3b3;
+
+	@include media("<sm") {
+		display: none;
+	}
+}
+
+.service-icon {
+	padding: 6px 0;
+
+	@include media("<sm") {
+		padding: 10px 0;
+	}
+}
+
+.service-upper-row {
+	@include media("<sm") {
+		text-align: center;
+	}
+
+	&:after {
+		height: 1px;
+        content: '';
+        display: block;
+        width: 100%;
+        margin: 45px auto;
+        background: #d8c5c5;
+
+        @include media("<sm") {
+        	display: none;
+        }
+	}
+}
+
+.service-lower-row {
+	@include media("<sm") {
+		text-align: center;
+	}
+}
+
+.service-for-mobile {
+	display: none;
+
+	@include media("<sm") {
+		display: block;
+	}
+}
+
+.service-hide {
+	@include media("<sm") {
+		display: none;
+	}	
+}
+
+.no-margin {
+	max-width: 100%;
+}
+
+// Unique-section
+
+.s-unique-design {
+	background: url(assets/img/unique-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding-bottom: 0;
+
+	.unique-design {
+		width: 100%;
+		margin: 0 auto;
+
+		@include media('<md') {
+		    width: 70%;
+		}
+	}
+
+	.unique-mobile {
+		position: absolute;
+		top: 270px;
+		right: 298px;
+		width: 16%;
+
+		@include media('<md') {
+			display: none;
+		}
+	}
+}
+
+// service-section
+
+.service-img {
+
+	.photography-img {
+		width: 100%;
+	}
+}
+
+
+// testimonial
+
+.s-testimonial {
+	background: #eee;
+	padding: 50px 0;
+
+	@include media('<md') {
+	    padding: 25px 0;
+	}
+
+	.massage-img {
+	    border: 2px solid #47d2cb;
+		padding: 10px;
+	}
+
+
+	.comments {
+		display: block;
+		color: #a79f9f;
+		font-size: 12px;
+		font-style: italic;
+
+		@include media('<md') {
+			text-align: center;
+    		padding: 7px;
+    		margin-bottom: 0;
+    		font-size: 8px;
+		}
+	}
+
+	.author {
+		padding-left: 50px; 		
+		font-family: 'Kaushan Script', cursive;
+		margin-top: 10px;
+
+		@include media('<md') {
+		    padding-left: 110px;
+		    margin-top: 0;
+		    font-size: 12px;
+		}
+
+		&:after {
+			display: block;
+			width: 40px;
+			height: 2px;
+			margin: -10px 0 0 -50px;
+			content: '';
+			background: #f38181;
+
+			@include media('<md') {
+				width: 35px;
+				margin: -8px 0 0 -50px;
+			}
+		}
+	}
+}
+
+// Partners
+
+.s-partner {
+	background: #eee;
+
+	.brand-items {
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+
+	.brand-img {
+		padding: 50px 0;
+
+		@include media('<md') {
+			padding: 25px 0;
+		}
+	}
+}
+
+// our work
+
+.no-padding {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.review {
+    padding-top: 150px;
+
+    @include media('<md') {
+    	padding-top: 40px;
+    }
+}
+
+.feedback-img {
+    width: 100%;
+    border-radius: 50%;
+    height: 125px;
+
+	@include media('<md') {
+		width: 80%;
+		height: 130px;
+	}
+}
+
+.comments {
+	display: block;
+	color: #a79f9f;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.author {
+	padding-left: 50px; 		
+	font-family: 'Kaushan Script', cursive;
+	margin-top: 10px;
+
+	&:after {
+		display: block;
+		width: 40px;
+		height: 2px;
+		margin: -10px 0 0 -50px;
+		content: '';
+		background: #f38181;
+	}
+}
+
+
+// happy client
+
+.s-happy-client {
+	background: url(assets/img/happy-client-bg.png);
+
+	@include media('<md') {
+		background-position: center;
+	}
+
+
+	.client-img {
+		width: 100%;
+
+		@include media('<md') {
+			width: 180%;
+		}
+	}
+
+	.client-name {
+		margin: 10px 0;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+
+		@include media('<md') {
+			font-size: 10px;
+		}
+	}
+
+	.client-post {
+		margin: 15px 0;
+		font-size: 14px;
+		font-style: italic;
+		color: #847f7f;
+
+		&:after {
+			height: 2px;
+			content: '';
+			display: block;
+			width: 50px;
+			margin: 15px 0 0 0;
+			background: #f38181;
+		}
+
+		@include media('<md') {
+			margin: 5px 0;
+			font-size: 10px;
+		}
+	}
+
+	.client-details {
+		font-size: 12px;
+		color: #847f7f;
+
+		@include media('<md') {
+		    display: none;
+		}
+	}
+
+	.client-upper {
+		padding: 20px 0;
+	}
+
+	.client-lower {
+		padding-bottom: 20px;
+	}
+}
+
+.read-more-link {
+	display: none;
+
+	@include media('<md') {
+	    display: block;
+	    color: #847f7f;
+	    font-style: italic;
+	    @include heading-font(12px);
+	    font-weight: normal;
+	}
+}
+
+
+
+// blog
+
+.blog-img {
+	width: 100%;
+	position: relative;
+}
+
+.date {
+    position: absolute;
+    width: 20%;
+    left: 0px;
+    top: 128px;
+
+    @include media('<md') {
+    	display: none;
+    }
+}
+
+.blog-heading {
+	margin: 20px 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+    font-size: 14px;
+}
+
+.blog-details {
+    font-size: 12px;
+    color: #847f7f;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+
+    &:after {
+    	height: 1px;
+		content: '';
+		display: block;
+	    width: 100%;
+		margin: 15px auto;
+		background: #d8c5c5;
+    }
+}
+
+
+.blog-icons-section {
+	ul {
+		padding: 0;
+		margin: 0;
+
+		li {
+			float: left;
+			display: inline-block;
+			padding: 20px 10px 20px 0;
+
+			a {
+				text-decoration: none;
+				color: #847f7f;
+
+				&:hover {
+					text-decoration: none;
+					color: #847f7f;					
+				}
+			}
+		}
+	}
+}
+
+
+// map
+
+.s-map {
+	background: url(assets/img/map-b.png);
+	padding: 40px 0;
+
+	.map-body {
+		margin: 0 auto;
+
+		.map-image {
+	        padding-right: 8px;
+
+		    @include media('<md') {
+		    	padding-right: 0;
+		    }
+		}
+
+		.no-padding {
+			padding: 0;
+		}
+
+		.map-head {
+			margin: 20px 0;
+			font-weight: 700;
+			color: #e07272;
+			margin-right: 32px;
+			font-size: 18px;
+			text-transform: uppercase;
+
+			&:after {
+				display: block;
+				width: 60px;
+				height: 2px;
+				margin: 20px auto;
+				content: '';
+				background: #f38181;
+
+				@include media('<md') {
+					margin: 20px auto;
+				}
+			}
+
+			@include media('<md') {
+			    margin: 20px 18px 0px 0;
+			}
+		}
+
+	}
+}

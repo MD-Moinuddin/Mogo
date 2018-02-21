@@ -1,0 +1,70 @@
+.counter-row {
+	width: 100%;
+
+	.counter-column {
+		width: 19.5%;
+		display: inline-block;
+		border-right: 1px solid #b5eae0;
+		padding: 50px 0;
+
+		@include media("<sm") {
+		    padding: 30px 0;
+		    width: 18%;
+		}
+	}
+
+	.counter-column-1 {
+		float: left;
+		width: 20%;
+		padding: 50px 0;
+		border-right: 1px solid #b5eae0;
+		border-left: 1px solid #b5eae0;
+
+		@include media("<sm") {
+		    padding: 30px 0;
+        	width: 21%;		    
+		}
+	}
+
+	.counter-column-5 {
+		float: right;
+		width: 20%;
+		padding: 50px 0;
+		border-right: 1px solid #b5eae0;
+
+		@include media("<sm") {
+		    padding: 30px 0;
+	        width: 22%;
+		}
+	}
+}
+
+.counter-number {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	color: #fff;
+	font-size: 30px;
+	text-transform: uppercase;
+
+	@include media("<sm") {
+	    font-size: 16px;
+	}
+}
+
+.counter-details {
+	display: flex;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size: 10px;
+	text-transform: uppercase;
+
+	@include media("<sm") {
+		font-size: 8px;
+		font-weight: 600;
+		text-align: center;
+	}
+}

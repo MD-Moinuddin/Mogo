@@ -1,0 +1,44 @@
+.my-carousel-prev {
+    top: 0px;
+    left: -1000px;
+    width: 1%;
+
+    @include media('<md') {
+        top: 0;
+        left: -245px;
+        width: 3%;
+    }
+}
+
+.my-carousel-next {
+	width: 1%;
+
+    @include media('<md') {
+        width: 3%;
+        right: -15px;
+    }
+}
+
+.feedback-carousel-prev {
+	top: -61px;
+    left: -30px;
+    width: 1%;
+}
+
+.feedback-carousel-next {
+    width: 1%;
+    top: -81px;
+    right: -1020px;
+}
+
+.sliding-element {
+	margin: 0 50px;
+}
+
+.carousel-control-prev-icon {
+	background-image: url(assets/img/arrow-1.png);
+}
+
+.carousel-control-next-icon {
+	background-image: url(assets/img/arrow-2.png);
+}

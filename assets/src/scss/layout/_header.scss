@@ -1,0 +1,125 @@
+.header-background {
+	background: url(assets/img/hero-bg.jpg);
+	background-size: cover;
+    background-repeat: round; 
+
+	.my-nav-bar {
+		padding: 10px 0;
+
+		.brand-logo {
+			padding: 0;
+			margin: 0;
+			font-size: 18px;
+			color: #fff;
+			font-weight: 500;
+		}
+
+		.my-nav-item {
+			padding: 5px 0;
+
+			li {
+				padding: 0 20px;
+			}
+
+			@include media('<md') {
+			    padding: 15px 0;
+			}			
+		}
+
+		.my-nav-link {
+			padding: 0;
+			color: #fff;
+			display: initial;
+
+			&:hover {
+			    color: #fce38a;
+    			border-bottom: 2px solid #fce38a;
+			}
+
+			&:active {
+				color: #fce38a;
+				border-bottom: 2px solid #fce38a;
+			}
+		}
+
+		.nav-img {
+			padding-bottom: 5px;
+		}
+	}
+}
+
+
+/*hero part*/
+
+.hero-header {
+	padding-top: 100px;
+	color: #fff;
+
+	@include media('<md') {
+		padding-top: 0;
+	}
+
+	.hero-text {
+		@include heading-font(75px, 1);
+		text-align: center;
+		border-bottom: none;
+
+		@include media('<md') {
+		    font-size: 20px;
+		}
+
+		&:after {
+			display: block;
+			width: 60px;
+			height: 2px;
+			content: '';
+			background: #fff;
+		    margin-left: 180px;
+			margin-top: 20px;
+
+			@include media('<md') {
+				margin-top: 15px;
+				margin-left: 82px;
+			}
+		}
+	}
+
+	.hero-curve-text {
+		@include decor-font;
+		padding-bottom: 10px;
+		display: block;
+		font-size: 30px;
+		font-weight: normal;
+
+		@include media('<md') {
+		    font-size: 20px;
+		}
+	}
+
+
+
+	.hero-button {
+		color: #fff;
+		background-color: transparent;
+		border-color: #fff;
+		border: 2px solid #fff;
+		border-radius: 0;
+		line-height: .5;
+		margin-bottom: 100px;
+
+		@include media('<md') {
+		    margin-bottom: 20px;
+		}
+	}
+}
+
+.sliding-option {
+	font-size: 12px;
+    border-top: 2px solid #fff;
+    padding: 10px 0;
+
+	.sliding-option-number {
+		font-weight: bold;
+		padding-right: 5px;
+	}
+}

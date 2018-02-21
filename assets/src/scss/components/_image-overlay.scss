@@ -1,0 +1,118 @@
+// image overlay hover
+
+.quality-item {
+	position: relative;
+    width: 100%;
+    cursor: pointer;
+
+    .hover-items {
+    	display: none;
+    }
+
+    .team-hover-items {
+    	display: none;
+    }
+
+    &:hover {
+
+		.overlay-hover {
+			position: absolute;
+		    bottom: 5px;
+		    left: -5px;
+			height: 100%;
+			width: 100%;
+		    opacity: 0.8;
+			display: flex;
+			justify-content: center;
+			margin-right: 10px;
+		    box-shadow: 5px 5px 0 #23b8bf;
+			background: #1e5799;
+			background: linear-gradient(to top, #1e5799 0%,#fce38a 0%,#f38181 100%);
+
+			.hover-items {
+				display: block;
+				color: #fff;
+			    margin: auto;
+
+			    .overlay-text {
+			    	font-family: 'Montserrat', sans-serif;
+			    	font-weight: bold;
+			    	font-size: 14px;
+			    	text-transform: uppercase;
+			    }
+			}
+
+
+			.team-hover-items {
+				display: block;
+				color: #fff;
+			    margin-top: 175px;
+
+			    .overlay-text {
+			    	font-family: 'Montserrat', sans-serif;
+			    	font-weight: bold;
+			    	font-size: 14px;
+			    	text-transform: uppercase;
+			    }
+			}	
+	 	}
+ 	}
+
+}
+
+.overlay-icon {
+	margin: 0 32px;
+}
+
+.social-icon {
+    margin-right: 42px;
+
+	li {
+		float: left;
+		display: inline-block;
+		padding: 10px 10px;
+	    background: #e6d375;
+	    border-right: 1px solid #bba1a1c7;
+
+	    &:last-child {
+	    	padding-bottom: 10px;
+	    	border-right: 0;
+	    }
+
+	    &:hover {
+	    	background: #bd390e;
+
+	    	a {
+	    		color: #fff;
+	    	}
+	    }
+
+		a {
+			color: #e7987f;
+		}
+	}
+}
+
+.quality-img {
+    width: 100%;
+}	
+
+.member-name {
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+
+.member-post {
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	color: #4e4747;
+	font-style: italic;
+	font-size: 10px;
+
+	@include media('<md') {
+		padding-bottom: 10px;
+	}
+}

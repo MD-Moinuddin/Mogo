@@ -1,0 +1,49 @@
+.collapse-section {
+	max-height: 360px;
+	overflow: hidden;
+
+	@include media('<md') {
+	    max-height: 500px;
+		padding: 20px 0;
+	}
+
+	.my-card {
+	    border: 1px solid #eee;
+	    border-radius: 0;
+        margin-bottom: 5px;
+
+		.my-card-header {
+		    border: 1px solid #eee;
+	        padding: 5px 10px;
+	        background-color: #fff;
+
+			a {
+				color: #000;
+
+				&:hover {
+					text-decoration: none;
+					color: #000;
+				}
+			}
+
+			.collapse-icon {
+				padding-right: 5px;
+			}
+		}
+
+		.my-card-block {
+
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

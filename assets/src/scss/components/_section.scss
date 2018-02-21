@@ -1,0 +1,52 @@
+.section {
+	padding: 75px 0;
+
+	@include media('<md') {
+		padding: 30px 0;
+	}
+
+	.section-header {
+
+		.section-title {
+			font-family: 'Kaushan Script', cursive;
+		    font-size: 16px;
+	        font-weight: 500;
+
+	        @include media('<md') {
+        	    font-size: 14px;
+	        }
+		}
+
+		.section-tag {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
+
+			@include media('<md') {
+				font-size: 15px;
+			}
+		}
+
+		&:after {
+			display: block;
+			width: 60px;
+			height: 2px;
+			margin: 20px auto;
+			content: '';
+			background: #f38181;
+
+			@include media('<md') {
+				margin: 10px auto;
+			}
+		}
+	}
+}
+
+.section-body {
+	padding-top: 20px;
+
+	@include media('<md') {
+	    padding-top: 15px;
+	}
+}
